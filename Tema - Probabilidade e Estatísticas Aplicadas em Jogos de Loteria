@@ -1,0 +1,30 @@
+Estudo da Distribuição de Probabilidades em Loterias
+
+Título: "Probabilidade e Estatísticas Aplicadas em Jogos de Loteria"
+
+Descrição: Este trabalho irá analisar as probabilidades e padrões numéricos em jogos de loteria. Utilizando um banco de dados com resultados históricos de sorteios, aplicaremos a teoria da probabilidade, o teorema de Bayes e distribuições discretas para entender a aleatoriedade e possíveis tendências nos números sorteados.
+
+
+=====================
+
+
+Para encontrar um banco de dados de loterias, existem algumas fontes confiáveis que você pode explorar. Abaixo estão sugestões de onde você pode encontrar esses dados:
+
+1. **Sites Oficiais de Loterias**  
+   Muitos países e estados possuem loterias oficiais que disponibilizam os resultados dos sorteios em seus sites. Aqui estão alguns exemplos:
+   - **Caixa Econômica Federal (Brasil)**: No site da Caixa, você encontra os resultados de diversas loterias, como Mega-Sena, Lotofácil, Quina, entre outras. Eles também permitem baixar os dados históricos dos sorteios em arquivos como CSV.
+     - Link: [Loterias Caixa](https://loterias.caixa.gov.br)
+   - **Powerball (EUA)** e **EuroMillions (Europa)**: Essas loterias também têm sites oficiais que disponibilizam os resultados históricos, geralmente em formato acessível para análise.
+
+2. **Portais de Dados Públicos e Repositórios**  
+   - **Kaggle**: O Kaggle é um repositório de dados públicos que muitas vezes possui conjuntos de dados relacionados a jogos de azar e loterias. É um ótimo lugar para encontrar dados prontos para análise.
+     - Link: [Kaggle - Lottery Datasets](https://www.kaggle.com)
+   - **Data.gov** (EUA): Embora focado nos Estados Unidos, esse portal de dados públicos pode ter informações sobre loterias estaduais.
+
+3. **Scraping de Resultados de Loterias**  
+   Caso os sites não ofereçam diretamente o download dos resultados, você pode fazer scraping de páginas que apresentam esses dados. Por exemplo, ferramentas como Python (com bibliotecas como BeautifulSoup ou Selenium) podem ser usadas para extrair dados automaticamente de sites de loterias.
+
+4. **Bases de Dados Open-Source**  
+   Existem várias bases de dados open-source que compilam dados históricos de loterias de diversos países, disponibilizadas por comunidades de análise de dados.
+
+Com essas opções, você pode começar a montar a base de dados para aplicar as análises que planeja.
