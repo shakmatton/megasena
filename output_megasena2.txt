@@ -1,0 +1,404 @@
+
+
+Fonte de dados: https://github.com/programadriano/mongodb-megasena/blob/master/megasena.csv 
+
+
+
+Média de TODOS os números sorteados: 30.54
+
+Cálculo da Média (exemplo com os primeiros 5 números da 1ª dezena: [41, 39, 47, 1, 19]):
+Soma dos números: 147
+Quantidade de números: 5
+Média: 147 / 5 = 29.40
+
+Média dos números sorteados POR DEZENA:
+
+1ª Dezena    31.39
+2ª Dezena    30.17
+3ª Dezena    30.24
+4ª Dezena    30.28
+5ª Dezena    30.10
+6ª Dezena    31.05
+
+A média por dezena é calculada da mesma forma que a média geral, mas considerando apenas os números de cada dezena.
+
+
+Mediana dos números sorteados:
+
+1ª Dezena    32
+2ª Dezena    30
+3ª Dezena    30
+4ª Dezena    30
+5ª Dezena    30
+6ª Dezena    32
+
+Cálculo da Mediana (exemplo com os primeiros 5 números da 1ª dezena: [41, 39, 47, 1, 19]):
+Números ordenados: [1, 19, 39, 41, 47]
+Como há 5 números (ímpar), a mediana é o número do meio: 39
+
+
+Variância dos números sorteados:
+
+1ª Dezena    305.83
+2ª Dezena    305.57
+3ª Dezena    298.16
+4ª Dezena    293.71
+5ª Dezena    291.40
+6ª Dezena    312.38
+
+Cálculo da Variância (exemplo com os primeiros 5 números da 1ª dezena: [41, 39, 47, 1, 19]):
+1. Média (μ): 29.4
+2. (x - μ)² para cada número:
+   (41 - 29.4)² = 134.56
+   (39 - 29.4)² = 92.16
+   (47 - 29.4)² = 309.76
+   (1 - 29.4)² = 806.56
+   (19 - 29.4)² = 108.16
+3. Soma dos quadrados: 1451.20
+4. Variância (amostral): 1451.1999999999998 / (5 - 1) = 362.80
+
+
+Desvio Padrão dos números sorteados:
+
+1ª Dezena    17.49
+2ª Dezena    17.48
+3ª Dezena    17.27
+4ª Dezena    17.14
+5ª Dezena    17.07
+6ª Dezena    17.67
+
+Cálculo do Desvio Padrão:
+Raiz quadrada da Variância: √362.80 ≈ 19.05
+
+
+Moda dos números sorteados (por dezena):
+
+Moda da 1ª Dezena: 42
+Moda da 2ª Dezena: 2, 5
+Moda da 3ª Dezena: 51
+Moda da 4ª Dezena: 41
+Moda da 5ª Dezena: 29
+Moda da 6ª Dezena: 60
+
+A moda é o número que aparece com maior frequência em um conjunto de dados. Pode haver mais de uma moda (multimodal).
+
+
+Diferenças Absolutas entre Frequência Observada e Esperada:
+
+1 - 1.3    2 - 7.7    3 - 9.3    4 - 20.7   5 - 29.7
+6 - 1.7    7 - 4.3    8 - 1.7    9 - 22.3   10 - 11.7
+11 - 9.3   12 - 1.7   13 - 12.7  14 - 18.3  15 - 18.3
+16 - 3.7   17 - 13.7  18 - 0.3   19 - 13.3  20 - 9.3
+21 - 26.3  22 - 29.3  23 - 13.7  24 - 14.7  25 - 21.3
+26 - 32.3  27 - 8.7   28 - 9.7   29 - 9.7   30 - 7.7
+31 - 0.7   32 - 6.7   33 - 15.7  34 - 5.7   35 - 9.3
+36 - 2.7   37 - 1.7   38 - 3.3   39 - 20.3  40 - 14.3
+41 - 15.7  42 - 18.7  43 - 5.7   44 - 1.7   45 - 6.3
+46 - 8.3   47 - 2.7   48 - 12.3  49 - 10.7  50 - 12.7
+51 - 25.7  52 - 6.7   53 - 27.7  54 - 18.7  55 - 25.3
+56 - 0.3   57 - 14.3  58 - 4.3   59 - 5.3   60 - 10.3
+
+Frequência dos Números (Obtida e Esperada) e Média:
+
+Total de jogos realizados: 1853
+
++----------+---------------------+-----------------------+---------+
+|   Número |   Frequência Obtida |   Frequência Esperada |   Média |
++==========+=====================+=======================+=========+
+|        1 |                 184 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|        2 |                 193 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|        3 |                 176 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+|        4 |                 206 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|        5 |                 215 |                 185.3 |    0.12 |
++----------+---------------------+-----------------------+---------+
+|        6 |                 187 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|        7 |                 181 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|        8 |                 187 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|        9 |                 163 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+|       10 |                 197 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|       11 |                 176 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+|       12 |                 187 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       13 |                 198 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|       14 |                 167 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+|       15 |                 167 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+|       16 |                 189 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       17 |                 199 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|       18 |                 185 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       19 |                 172 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+|       20 |                 176 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+|       21 |                 159 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+|       22 |                 156 |                 185.3 |    0.08 |
++----------+---------------------+-----------------------+---------+
+|       23 |                 199 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|       24 |                 200 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|       25 |                 164 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+|       26 |                 153 |                 185.3 |    0.08 |
++----------+---------------------+-----------------------+---------+
+|       27 |                 194 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       28 |                 195 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|       29 |                 195 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|       30 |                 193 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       31 |                 186 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       32 |                 192 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       33 |                 201 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|       34 |                 191 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       35 |                 176 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+|       36 |                 188 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       37 |                 187 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       38 |                 182 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       39 |                 165 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+|       40 |                 171 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+|       41 |                 201 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|       42 |                 204 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|       43 |                 191 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       44 |                 187 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       45 |                 179 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       46 |                 177 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       47 |                 188 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       48 |                 173 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+|       49 |                 196 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|       50 |                 198 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|       51 |                 211 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|       52 |                 192 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       53 |                 213 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|       54 |                 204 |                 185.3 |    0.11 |
++----------+---------------------+-----------------------+---------+
+|       55 |                 160 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+|       56 |                 185 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       57 |                 171 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+|       58 |                 181 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       59 |                 180 |                 185.3 |    0.1  |
++----------+---------------------+-----------------------+---------+
+|       60 |                 175 |                 185.3 |    0.09 |
++----------+---------------------+-----------------------+---------+
+
+
+Explicação das Colunas:
+
+Frequência Esperada: Representa a frequência teórica que cada número deveria ter se os sorteios fossem perfeitamente aleatórios. É calculada dividindo o número total de dezenas sorteadas (6 dezenas por jogo * número de jogos) por 60 (total de números possíveis).
+No caso, a frequência esperada para cada número é: 11118 / 60 = 185.30
+Média: Representa a frequência média com que cada número foi sorteado por jogo. É calculada dividindo a 'Frequência Obtida' de cada número pelo 'Total de jogos realizados'.
+
+
+Justificativa da Comparação entre Frequência Observada e Esperada:
+
+Em um sorteio justo e aleatório, espera-se que cada número tenha aproximadamente a mesma probabilidade de ser sorteado (1/60).
+A comparação entre a frequência observada (a frequência com que cada número realmente foi sorteado nos dados históricos) e a frequência esperada (calculada com base na probabilidade teórica) permite verificar se os resultados dos sorteios se aproximam do esperado teoricamente.
+Desvios significativos entre a frequência observada e a esperada podem indicar a necessidade de uma investigação mais aprofundada, embora pequenas variações sejam esperadas devido à natureza aleatória dos sorteios.
+
+
+Análise com Distribuição Binomial (Exemplo com 10 Jogos):
+
+Esta análise utiliza a distribuição binomial para calcular a probabilidade de acertar *pelo menos um* dos 6 números apostados em um número fixo de jogos.
+Consideramos o exemplo de uma pessoa que joga na Mega Sena 10 vezes seguidas, escolhendo 6 números aleatórios em cada jogo.
+
+Cálculo Detalhado da probabilidade de acertar PELO MENOS UM número em um único jogo:
+
+Há 60 números na Mega Sena e alguém escolhe 6. A probabilidade de NÃO acertar NENHUM dos 6 números em um sorteio é calculada da seguinte forma:
+Se 54 números que NÃO foram escolhidos (60 - 6 = 54), a probabilidade de o primeiro número sorteado NÃO ser um dos seus é 54/60.
+Como os sorteios são sem reposição, a probabilidade do segundo número sorteado NÃO ser um dos números sorteados é de 53/59, e assim por diante.
+Portanto, a probabilidade de NÃO acertar NENHUM dos 6 números escolhidos é: (54/60) * (53/59) * (52/58) * (51/57) * (50/56) * (49/55) ≈ 0.407
+
+De forma mais direta: 54/60 = 0.9. Ou seja, há 90% de chance de se errar todos os números.
+Portanto, a probabilidade de acertar PELO MENOS UM número é: 1 - 0.9 = 0.1, ou seja, 10%. Logo:
+
+1. Probabilidade de NÃO acertar um número em um único jogo: 1 - 0.10 = 0.9000
+2. Probabilidade de NÃO acertar um número em NENHUM dos 10 jogos: (0.9000)^10 = 0.3487
+3. Probabilidade de acertar PELO MENOS UM número em PELO MENOS UM dos 10 jogos: 1 - 0.3487 = 0.6513
+
+Probabilidade de acertar pelo menos um número em pelo menos um dos 10 jogos: 0.6513 (65.13%)
+
+
+Teoria da Probabilidade na Mega Sena (Probabilidades de Acerto):
+
+O espaço amostral (número total de combinações possíveis) na Mega Sena é calculado por combinação simples:
+C(60, 6) = 60! / (6! * (60-6)!) = 50.063.860
+
+Este número (50.063.860) será o denominador em todos os cálculos de probabilidade abaixo, pois representa o número total de resultados possíveis.
+
+Probabilidades de Acerto em um Único Jogo:
+
+- Sena (6 números):
+
+  Para acertar a Sena, é preciso acertar os 6 números sorteados. Existe apenas 1 combinação que acerta os 6 números.
+  Probabilidade: 1 / 50063860 ≈ 0.00000002 (aproximadamente 0.000002%)
+
+- Quina (5 números):
+
+  Para acertar a Quina, é preciso acertar 5 dos 6 números sorteados e errar 1.
+  Existem C(6, 5) = 6 maneiras de escolher 5 números corretos dentre os 6 sorteados.
+  Existem C(54, 1) = 54 maneiras de escolher 1 número incorreto dentre os 54 restantes (60 - 6 = 54).
+  Portanto, existem 6 * 54 = 324 combinações que resultam em uma Quina.
+  Probabilidade: (6 * 54) / 50063860 = 324 / 50063860 ≈ 0.00000647 (aproximadamente 0.00065%)
+
+- Quadra (4 números):
+
+  Para acertar a Quadra, é preciso acertar 4 dos 6 números sorteados e errar 2.
+  Existem C(6, 4) = (6!)/(4!*2!) = 15 maneiras de escolher 4 números corretos dentre os 6 sorteados.
+  Existem C(54, 2) = (54!)/(52!*2!) = 1431 maneiras de escolher 2 números incorretos dentre os 54 restantes.
+  Portanto, existem 15 * 1431 = 21465 combinações que resultam em uma Quadra.
+  Probabilidade: (15 * 1431) / 50063860 = 21465 / 50063860 ≈ 0.00042875 (aproximadamente 0.0429%)
+
+Cada sorteio da Mega Sena é um evento independente dos anteriores. O resultado de um sorteio não influencia os resultados dos sorteios seguintes.
+
+
+Distribuições Discretas e a Análise de Frequência na Mega Sena:
+
+Como os números sorteados na Mega Sena são inteiros e distintos, podemos usar distribuições discretas para modelar aspectos do jogo.
+
+- Distribuição Uniforme Discreta (Idealizada):
+
+  Em um cenário ideal, onde todos os números têm exatamente a mesma probabilidade de serem sorteados, teríamos uma distribuição uniforme discreta.
+  Isso significa que a probabilidade de qualquer número específico ser sorteado é 1/60.
+
+  A 'frequência esperada' (número total de dezenas sorteadas / 60) representa o que esperaríamos sob essa distribuição ideal.
+  A análise de frequência compara as frequências *observadas* (quantas vezes cada número realmente foi sorteado) com essa frequência *esperada*.
+
+  Desvios entre a frequência observada e esperada são naturais devido à aleatoriedade dos sorteios.
+  Pequenas variações são normais e não indicam necessariamente um viés no sorteio.
+  Desvios muito grandes, no entanto, poderiam levantar suspeitas e justificar uma investigação mais aprofundada.
+
+- Distribuição Hipergeométrica (Probabilidade de Acerto):
+
+  A distribuição hipergeométrica é a mais adequada para calcular as probabilidades de acertar a Sena, Quina ou Quadra, pois ela modela o sorteio sem reposição (uma vez que um número é sorteado, ele não volta para o sorteio).
+  As fórmulas usadas anteriormente para calcular as probabilidades de Sena, Quina e Quadra são derivadas da distribuição hipergeométrica.
+
+Em resumo, a análise de frequência busca verificar se os sorteios se comportam de acordo com o que seria esperado em um sorteio justo e aleatório, modelado pela distribuição uniforme discreta.
+As probabilidades de acerto (Sena, Quina, Quadra) são calculadas usando a distribuição hipergeométrica, que considera o sorteio sem reposição.
+
+
+Conclusões:
+
+1. Distribuição Aparente: O histograma mostra a distribuição de frequência dos números sorteados. Visualmente, parece haver uma distribuição relativamente uniforme, como esperado em um sorteio aleatório, mas podemos observar pequenas variações.
+
+2. Dispersão dos Números: A variância e o desvio padrão quantificam a dispersão dos números em cada dezena. Valores maiores indicam maior variação.
+
+3. Números Recorrentes: O gráfico de frequência ordenada destaca os números que apareceram com mais frequência. No entanto, é importante lembrar que, em um sorteio justo, essas diferenças devem ser pequenas devido ao acaso.
+
+4. Independência dos sorteios: Cada sorteio da Mega Sena é independente dos anteriores. A análise estatística descritiva dos números sorteados ao longo do tempo nos dá uma visão geral da distribuição dos números, mas não permite prever os próximos sorteios.
+
+
+Explicação das médias POR DEZENA:
+As médias por dezena, após o embaralhamento, devem apresentar valores próximos à média geral, confirmando a aleatoriedade dos sorteios.
+
+
+Explicação sobre a Distribuição Normal:
+
+A distribuição normal é uma distribuição contínua, enquanto os números da Mega Sena são discretos (inteiros de 1 a 60).
+Além disso, a distribuição normal é simétrica, enquanto a distribuição dos números da Mega Sena, idealmente, deve ser uniforme (cada número com a mesma probabilidade).
+Portanto, a distribuição normal não é um modelo adequado para representar a distribuição dos números sorteados na Mega Sena.
+
+
+Explicação sobre a Distribuição Binomial:
+
+A distribuição binomial é útil para calcular a probabilidade de um número de sucessos em um número fixo de tentativas.
+Por exemplo, poderíamos usar a binomial para calcular a probabilidade de acertar um número específico na Mega Sena em X jogos.
+No entanto, nosso objetivo aqui é analisar a frequência com que os números são sorteados ao longo dos concursos, e não a probabilidade de acerto em um número fixo de tentativas.
+Portanto, a distribuição binomial não é diretamente aplicável para analisar a distribuição de frequência dos números sorteados.
+
+
+Explicação sobre o Teorema de Bayes:
+
+O Teorema de Bayes é usado para calcular probabilidades condicionais, ou seja, a probabilidade de um evento ocorrer dado que outro evento já ocorreu.
+Na Mega Sena, os sorteios são independentes: o resultado de um sorteio não influencia o resultado dos sorteios seguintes.
+Portanto, a probabilidade de um número ser sorteado em um concurso não depende se ele foi sorteado ou não em concursos anteriores.
+Consequentemente, a aplicação direta do Teorema de Bayes para prever números na Mega Sena é redundante, pois a probabilidade condicional é igual à probabilidade incondicional (P(A|B) = P(A)).
+
+
+Explicação sobre a Distribuição Exponencial:
+
+A distribuição exponencial modela o tempo entre eventos em um processo de Poisson, onde os eventos ocorrem de forma contínua e independente a uma taxa constante.
+Na Mega Sena, os sorteios ocorrem em intervalos discretos (não contínuos) e o que analisamos é a frequência dos números sorteados, não o tempo entre os sorteios.
+Além disso, a distribuição exponencial é adequada para modelar tempos de espera ou durações, o que não se aplica diretamente à análise da frequência dos números da Mega Sena.
+Portanto, a distribuição exponencial não é um modelo apropriado para este tipo de análise.
+
+
+Variáveis Aleatórias Discretas e Contínuas na Mega Sena:
+
+Uma variável aleatória é uma variável cujo valor numérico é o resultado de um fenômeno aleatório.
+
+1. Variáveis Aleatórias Discretas:
+
+   Uma variável aleatória é discreta se seus valores possíveis formam um conjunto finito ou contável. Na Mega Sena, temos diversos exemplos:
+
+   - O número sorteado em uma determinada dezena (ex: a 1ª dezena pode assumir valores de 1 a 60).
+   - A quantidade de vezes que um número específico é sorteado ao longo de todos os concursos (a 'Frequência Obtida').
+   - O número de acertos em um concurso (Sena, Quina, Quadra ou nenhum acerto).
+
+   As seguintes distribuições de probabilidade discretas são relevantes para a análise da Mega Sena:
+
+   - Distribuição Uniforme Discreta: Modela o cenário ideal onde cada número tem a mesma probabilidade (1/60) de ser sorteado. A análise de frequência compara os resultados reais com esse modelo.
+   - Distribuição Hipergeométrica: Usada para calcular as probabilidades de acerto (Sena, Quina, Quadra), considerando o sorteio sem reposição.
+   - Distribuição Binomial: Usada para calcular a probabilidade de acertar pelo menos um número em um número fixo de jogos.
+
+
+   (Veja exemplos detalhados dos dados aplicados à essas distribuições no output do código do programa 'megasena2.py') .
+
+
+2. Variável Aleatória Contínua (derivada):
+
+   A média dos números sorteados em cada concurso é um exemplo de variável aleatória contínua derivada dos dados discretos. Vamos analisar a distribuição dessas médias.
+
+   Analisando a variável 'Média dos números sorteados por concurso', observamos:
+   - Média geral das médias: 30.54
+   - Desvio padrão das médias: 6.68
+   - Valor mínimo da média: 11.00
+   - Valor máximo da média: 52.33
+
+   Essas estatísticas descrevem a distribuição da variável contínua derivada, fornecendo informações sobre sua tendência central (média) e dispersão (desvio padrão).
+   O histograma permite visualizar a distribuição das médias, mostrando a frequência com que diferentes valores de média ocorrem nos concursos.
+

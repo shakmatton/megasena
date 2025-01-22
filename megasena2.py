@@ -4,6 +4,41 @@ import seaborn as sns
 import numpy as np
 import scipy.stats as stats
 import megasena3
+import megasena4
+
+
+def processar_dados_mega_sena(nome_arquivo_csv='megasena_final.csv'):
+    """Processa os dados da Mega Sena a partir do CSV."""
+    dados_loteria_sem_na = None  # Inicializa dados_loteria_sem_na como None
+    colunas_numeros = None #Inicializa colunas_numeros como None
+    try:
+        dados_loteria = pd.read_csv(nome_arquivo_csv, encoding='utf-8')
+        if dados_loteria.empty:
+            dados_loteria = pd.read_csv(nome_arquivo_csv, encoding='latin1', delimiter=';')
+        if dados_loteria.empty:
+            dados_loteria = pd.read_csv(nome_arquivo_csv, encoding='cp1252', delimiter='\t')
+        if dados_loteria.empty:
+            dados_loteria = pd.read_csv(nome_arquivo_csv, encoding='utf-8', header=None, names=['concurso','data','dezena_1','dezena_2','dezena_3','dezena_4','dezena_5','dezena_6','ganhadores_sena','cidade','rateio_sena','ganhadores_quina','rateio_quina','ganhadores_quadra','rateio_quadra','acumulado','arrecadacao','estimativa','acumulado_especial','observacao'])
+
+        colunas_numeros = ['1ª Dezena', '2ª Dezena', '3ª Dezena', '4ª Dezena', '5ª Dezena', '6ª Dezena']
+
+        # Converte para inteiro e remove linhas com NaN
+        for coluna in colunas_numeros:
+            dados_loteria[coluna] = pd.to_numeric(dados_loteria[coluna], errors='coerce').astype('Int64')
+        dados_loteria_sem_na = dados_loteria.dropna(subset=colunas_numeros)
+
+    except FileNotFoundError:
+        print(f"Erro: Arquivo '{nome_arquivo_csv}' não encontrado.")
+        return dados_loteria_sem_na, colunas_numeros #Retorna None, None
+    except pd.errors.ParserError as e:
+        print(f"Erro ao ler o arquivo CSV '{nome_arquivo_csv}': {e}")
+        return dados_loteria_sem_na, colunas_numeros #Retorna None, None
+    except Exception as e:
+        print(f"Ocorreu um erro INESPERADO ao ler o arquivo CSV: {e}")
+        return dados_loteria_sem_na, colunas_numeros #Retorna None, None
+
+    return dados_loteria_sem_na, colunas_numeros #Retorno normal da função.
+
 
 def analisar_mega_sena(nome_arquivo_csv):
     """Analisa os dados da Mega Sena e exibe as fórmulas e cálculos."""
@@ -264,7 +299,6 @@ def analisar_mega_sena(nome_arquivo_csv):
     print("Em resumo, a análise de frequência busca verificar se os sorteios se comportam de acordo com o que seria esperado em um sorteio justo e aleatório, modelado pela distribuição uniforme discreta.")
     print("As probabilidades de acerto (Sena, Quina, Quadra) são calculadas usando a distribuição hipergeométrica, que considera o sorteio sem reposição.\n")
 
-
     print("\nConclusões:")
     print("\n1. Distribuição Aparente: O histograma mostra a distribuição de frequência dos números sorteados. Visualmente, parece haver uma distribuição relativamente uniforme, como esperado em um sorteio aleatório, mas podemos observar pequenas variações.")
     print("\n2. Dispersão dos Números: A variância e o desvio padrão quantificam a dispersão dos números em cada dezena. Valores maiores indicam maior variação.")
@@ -300,6 +334,13 @@ def analisar_mega_sena(nome_arquivo_csv):
     print("Além disso, a distribuição exponencial é adequada para modelar tempos de espera ou durações, o que não se aplica diretamente à análise da frequência dos números da Mega Sena.")
     print("Portanto, a distribuição exponencial não é um modelo apropriado para este tipo de análise.\n")
 
+    # *** CHAMADA PARA megasena4.py (CORRIGIDA) ***
+    dados_loteria_sem_na, colunas_numeros = processar_dados_mega_sena() #Apenas a chamada, sem a definição da função aqui dentro.
+    if dados_loteria_sem_na is not None:    
+        megasena4.analisar_variaveis_mega_sena(dados_loteria_sem_na, colunas_numeros)
+    
+
+    # FIM DA FUNÇÃO analisar_mega_sena
 
 if __name__ == "__main__":
     nome_csv = 'megasena_final.csv'

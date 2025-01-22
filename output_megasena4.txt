@@ -1,0 +1,36 @@
+
+Variáveis Aleatórias Discretas e Contínuas na Mega Sena:
+
+Uma variável aleatória é uma variável cujo valor numérico é o resultado de um fenômeno aleatório.
+
+1. Variáveis Aleatórias Discretas:
+
+   Uma variável aleatória é discreta se seus valores possíveis formam um conjunto finito ou contável. Na Mega Sena, temos diversos exemplos:
+
+   - O número sorteado em uma determinada dezena (ex: a 1ª dezena pode assumir valores de 1 a 60).
+   - A quantidade de vezes que um número específico é sorteado ao longo de todos os concursos (a 'Frequência Obtida').
+   - O número de acertos em um concurso (Sena, Quina, Quadra ou nenhum acerto).
+
+   As seguintes distribuições de probabilidade discretas são relevantes para a análise da Mega Sena:
+
+   - Distribuição Uniforme Discreta: Modela o cenário ideal onde cada número tem a mesma probabilidade (1/60) de ser sorteado. A análise de frequência compara os resultados reais com esse modelo.
+   - Distribuição Hipergeométrica: Usada para calcular as probabilidades de acerto (Sena, Quina, Quadra), considerando o sorteio sem reposição.
+   - Distribuição Binomial: Usada para calcular a probabilidade de acertar pelo menos um número em um número fixo de jogos.
+
+
+   (Veja exemplos detalhados dos dados aplicados à essas distribuições no output do código do programa 'megasena2.py') .
+
+
+2. Variável Aleatória Contínua (derivada):
+
+   A média dos números sorteados em cada concurso é um exemplo de variável aleatória contínua derivada dos dados discretos. Vamos analisar a distribuição dessas médias.
+
+   Analisando a variável 'Média dos números sorteados por concurso', observamos:
+   - Média geral das médias: 30.54
+   - Desvio padrão das médias: 6.68
+   - Valor mínimo da média: 11.00
+   - Valor máximo da média: 52.33
+
+   Essas estatísticas descrevem a distribuição da variável contínua derivada, fornecendo informações sobre sua tendência central (média) e dispersão (desvio padrão).
+   O histograma permite visualizar a distribuição das médias, mostrando a frequência com que diferentes valores de média ocorrem nos concursos.
+
